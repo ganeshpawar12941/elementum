@@ -33,10 +33,10 @@ const HeroSection = () => {
   const { ref: photosRef, isVisible: photosVisible } = useScrollAnimation(0.1);
 
   return (
-    <section id="home" className="relative overflow-hidden pb-16 md:pb-24">
+    <section id="home" className="relative overflow-hidden pt-12 pb-16 md:pb-24">
 
-      <div>
-        <svg viewBox="0 0 120 300" fill="none" className="w-full h-full">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+        <svg viewBox="0 0 120 300" fill="none" className="absolute left-0 top-0 w-32 h-full opacity-60">
           <path d="M60 0 Q20 80, 60 150 Q100 220, 40 300" stroke="hsl(var(--accent-coral))" strokeWidth="2" fill="none" opacity="0.5" />
           <path d="M80 0 Q40 80, 80 150 Q120 220, 60 300" stroke="hsl(var(--foreground))" strokeWidth="2" fill="none" opacity="0.3" />
         </svg>
